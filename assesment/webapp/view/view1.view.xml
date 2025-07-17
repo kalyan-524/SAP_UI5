@@ -1,0 +1,43 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="assesment.controller.empdetails"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Table id ="MaterialTable"  mode="SingleSelect" items="{material>/materials}" >
+        <headerToolbar>
+        <Toolbar>
+         <content>
+         <Title text="Material Table"/>
+         </content>
+        </Toolbar>
+        </headerToolbar>
+        <columns>
+                <Column width="10rem">
+                    <Text text="Material Number"/>
+                </Column>
+                 <Column width="20rem">
+                    <Text text="Material Name"/>
+                </Column>
+                 <Column width="20rem">
+                    <Text text="Material Type"/>
+                </Column>
+                 <Column width="20rem">
+                    <Text text="Current Stock"/>
+                </Column>
+                 <Column width="20rem">
+                    <Text text="Currency"/>
+                </Column>
+            </columns>
+                <!-- <items>
+                <ColumnListItem >
+                    <cells>
+                        <Text text="{material>material_id}"/>
+                        <Text text="{material>material_name}"/>
+                        <Text text="{material>material_type}"/>
+                        <ObjectStatus text="{material>current_stock}" state="{=${material>current_stock} >= '600' ? 'Success' : ${material>current_stock} >= 500 ? 'Error' : 'Warning'}"/>
+                        <Text text="{material>currency}"/>
+                    </cells>
+                </ColumnListItem>
+            </items> -->
+     </Table>
+    </Page>
+</mvc:View>

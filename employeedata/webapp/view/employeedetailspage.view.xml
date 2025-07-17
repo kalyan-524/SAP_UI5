@@ -1,0 +1,8 @@
+<mvc:View controllerName="employeedata.controller.employeedetailspage"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="employeedetails" title="{i18n>employee details page}" showNavButton="true" navButtonPress="onNavigationBack">
+	
+       
+    </Page>
+</mvc:View>

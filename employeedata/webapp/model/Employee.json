@@ -1,0 +1,23 @@
+{
+    "EmployeeDetails":[
+        {"Name":"Kalyan",
+         "Department":"Human Resource",
+         "Location":"Chennai"},
+        {"Name":"Arsalan",
+         "Department":"Finance Consultant",
+         "Location":"Banglore"},
+        {"Name":"Sasi",
+         "Department":"Admin",
+         "Location":"Hyderabad"},
+        {"Name":"Harish Ragul",
+         "Department":"Production Manager",
+         "Location":"Chennai"},
+        {"Name":"Sneha",
+         "Department":"Frontdesk Officer",
+         "Location":"Banglore"},
+        {"Name":"Elakiya",
+         "Department":"Sales Executive",
+         "Location":"Pune"}
+    
+    ]
+}

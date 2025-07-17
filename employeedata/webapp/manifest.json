@@ -1,0 +1,109 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "employeedata",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.1",
+      "toolsId": "6fea3412-ad65-4013-8433-d412ed8fe3bc"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled":false,
+    "dependencies": {
+      "minUI5Version": "1.136.2",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "employeedata.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "employeedata.view",
+        "async": true,
+        "viewPath": "employeedata.view"
+      },
+      "routes": [
+        {
+          "name": "RouteEmployeedetails",
+          "pattern": ":?query:",
+          "target": [
+            "TargetEmployeedetails"]
+        },
+        {
+          "name": "RouteEmployeepage",
+          "pattern": "page",
+          "target": [
+            "TargetEmployeepage"]
+        }
+        
+      ],
+      
+      "targets": {
+        "TargetEmployeedetails": {
+          "id": "Employeedetails",
+          "name": "Employeedetails"
+        },
+        "TargetEmployeepage": {
+          "id": "employeedetailspage",
+          "name": "employeedetailspage"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "employeedata.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

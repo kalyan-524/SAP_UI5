@@ -1,0 +1,48 @@
+<mvc:View controllerName="employeedata.controller.Employeedetails"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" >
+	
+    <List
+	id="employeelistid" 
+    
+    		headerText="Employee Name"
+		headerLevel="H2"
+		items="{
+			path: '/EmployeeDetails'
+		}" >
+       
+		<StandardListItem
+			title="{Name}"
+			description="{Department} , {Location}"
+            
+          	icon="sap-icon://customer"
+          type="Navigation" press="onemprowpress" 
+           
+            
+		/>
+      
+		<headerToolbar>
+         <Toolbar>
+            <content>
+            <Title text="List of Employees "/>
+            <ToolbarSpacer/>
+            <Title  text="Search Employee Name"></Title>
+            <SearchField width="20%" liveChange="onsearchemployee"/>
+            <ToolbarSpacer/>
+            <Title  text="Search Employee Location"></Title>
+            <SearchField width="10%" change="onsearchlocation"/>
+            
+            <Button  width="10%" text='Sort Name' icon="sap-icon://alphabetical-order" press="onSortPress"/>
+            <Button icon="sap-icon://add" press="onaddpress"/> 
+            </content>
+
+            
+           
+         </Toolbar>
+      </headerToolbar>			
+			
+	</List>
+    
+    </Page>
+</mvc:View>
