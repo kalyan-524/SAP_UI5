@@ -80,6 +80,166 @@
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
         "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/northwindodatademo\"}"
       }
+    },
+    {
+        "name": "Start northwindodatademo",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/northwindodatademo",
+        "runtimeExecutable": "npx",
+        "windows": {
+            "runtimeExecutable": "npx.cmd"
+        },
+        "runtimeArgs": [
+            "fiori",
+            "run"
+        ],
+        "args": [
+            "--open",
+            "test/flp.html#app-preview"
+        ],
+        "console": "internalConsole",
+        "internalConsoleOptions": "openOnSessionStart",
+        "outputCapture": "std",
+        "env": {
+            "DEBUG": "--inspect",
+            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/northwindodatademo\"}"
+        }
+    },
+    {
+        "name": "Start northwindodatademo Local",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/northwindodatademo",
+        "runtimeExecutable": "npx",
+        "windows": {
+            "runtimeExecutable": "npx.cmd"
+        },
+        "runtimeArgs": [
+            "fiori",
+            "run"
+        ],
+        "args": [
+            "--config",
+            "./ui5-local.yaml",
+            "--open",
+            "test/flp.html#app-preview"
+        ],
+        "console": "internalConsole",
+        "internalConsoleOptions": "openOnSessionStart",
+        "outputCapture": "std",
+        "env": {
+            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/northwindodatademo\"}"
+        }
+    },
+    {
+        "name": "Start northwindodatademo Mock",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/northwindodatademo",
+        "runtimeExecutable": "npx",
+        "windows": {
+            "runtimeExecutable": "npx.cmd"
+        },
+        "runtimeArgs": [
+            "fiori",
+            "run"
+        ],
+        "args": [
+            "--config",
+            "./ui5-mock.yaml",
+            "--open",
+            "test/flp.html#app-preview"
+        ],
+        "console": "internalConsole",
+        "internalConsoleOptions": "openOnSessionStart",
+        "outputCapture": "std",
+        "env": {
+            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/northwindodatademo\"}"
+        }
+    },
+    {
+        "name": "Start northwindemployees",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/northwindemployees",
+        "runtimeExecutable": "npx",
+        "windows": {
+            "runtimeExecutable": "npx.cmd"
+        },
+        "runtimeArgs": [
+            "fiori",
+            "run"
+        ],
+        "args": [
+            "--open",
+            "test/flp.html#app-preview"
+        ],
+        "console": "internalConsole",
+        "internalConsoleOptions": "openOnSessionStart",
+        "outputCapture": "std",
+        "env": {
+            "DEBUG": "--inspect",
+            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/northwindemployees\"}"
+        }
+    },
+    {
+        "name": "Start northwindemployees Local",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/northwindemployees",
+        "runtimeExecutable": "npx",
+        "windows": {
+            "runtimeExecutable": "npx.cmd"
+        },
+        "runtimeArgs": [
+            "fiori",
+            "run"
+        ],
+        "args": [
+            "--config",
+            "./ui5-local.yaml",
+            "--open",
+            "test/flp.html#app-preview"
+        ],
+        "console": "internalConsole",
+        "internalConsoleOptions": "openOnSessionStart",
+        "outputCapture": "std",
+        "env": {
+            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/northwindemployees\"}"
+        }
+    },
+    {
+        "name": "Start northwindemployees Mock",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/northwindemployees",
+        "runtimeExecutable": "npx",
+        "windows": {
+            "runtimeExecutable": "npx.cmd"
+        },
+        "runtimeArgs": [
+            "fiori",
+            "run"
+        ],
+        "args": [
+            "--config",
+            "./ui5-mock.yaml",
+            "--open",
+            "test/flp.html#app-preview"
+        ],
+        "console": "internalConsole",
+        "internalConsoleOptions": "openOnSessionStart",
+        "outputCapture": "std",
+        "env": {
+            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/northwindemployees\"}"
+        }
     }
   ]
 }

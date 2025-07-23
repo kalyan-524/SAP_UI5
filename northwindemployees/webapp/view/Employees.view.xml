@@ -1,0 +1,13 @@
+<mvc:View controllerName="northwindemployees.controller.Employees"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <List items="{/Employees}">
+    <items>
+        <ObjectListItem title="{FirstName} {LatName}"
+        icon="sap-icon://person-placeholder"
+        number="505"/>
+    </items>
+    </List>
+    </Page>
+</mvc:View>
