@@ -4,7 +4,9 @@
             <Page id="page" title="{i18n>title}">
             <List items="{/Employees}" >
               <items>
-              <ObjectListItem title="{FirstName} {LastName}"  icon="sap-icon://person-placeholder" number="505"   >
+              <ObjectListItem title="{FirstName} {LastName}"  
+              icon="sap-icon://person-placeholder" 
+              number="505"   >
               </ObjectListItem>
               </items>
             </List>
