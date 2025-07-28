@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "northwindemployees",
+    "id": "ladera.expandentity",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,11 +13,11 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.18.3",
-      "toolsId": "251a697c-af16-44ba-8b51-2fe264da7a86"
+      "toolsId": "942e8a0a-8df1-4cdb-b043-bc4d51c1f926"
     },
     "dataSources": {
       "mainService": {
-        "uri": "/Northwind/Northwind.svc/",
+        "uri": "/v2/northwind/northwind.svc/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -44,9 +44,9 @@
     }
   },
   "sap.ui5": {
-    "flexEnabled": false,
+    "flexEnabled":false,
     "dependencies": {
-      "minUI5Version": "1.138.0",
+      "minUI5Version": "1.138.1",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {}
@@ -60,12 +60,11 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "northwindemployees.i18n.i18n"
+          "bundleName": "ladera.expandentity.i18n.i18n"
         }
       },
       "": {
         "dataSource": "mainService",
-        "type": "sap.ui.model.odata.v2.ODataModel",
         "preload": true,
         "settings": {}
       }
@@ -85,28 +84,28 @@
         "transition": "slide",
         "type": "View",
         "viewType": "XML",
-        "path": "northwindemployees.view",
+        "path": "ladera.expandentity.view",
         "async": true,
-        "viewPath": "northwindemployees.view"
+        "viewPath": "ladera.expandentity.view"
       },
       "routes": [
         {
-          "name": "RouteEmployees",
+          "name": "RouteView1",
           "pattern": ":?query:",
           "target": [
-            "TargetEmployees"
+            "TargetView1"
           ]
         }
       ],
       "targets": {
-        "TargetEmployees": {
-          "id": "Employees",
-          "name": "Employees"
+        "TargetView1": {
+          "id": "View1",
+          "name": "View1"
         }
       }
     },
     "rootView": {
-      "viewName": "northwindemployees.view.App",
+      "viewName": "ladera.expandentity.view.App",
       "type": "XML",
       "id": "App",
       "async": true

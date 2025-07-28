@@ -1,13 +1,53 @@
-<mvc:View controllerName="northwindemployees.controller.Employees"
+<mvc:View xmlns:table="sap.ui.table" controllerName="northwindemployees.controller.Employees"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-    <List items="{/Employees}">
+    <!-- <List items="{/Employees}">
     <items>
         <ObjectListItem title="{FirstName} {LatName}"
         icon="sap-icon://person-placeholder"
         number="505"/>
     </items>
-    </List>
+    </List> -->
+    <Table id="producttableid" items="{productModel>/results}" >
+    <headerToolbar>
+    <Toolbar>
+    <ToolbarSpacer />
+    <SearchField width="20%" change="onSearchProducts"/>
+    <!-- <Button icon="sap-icon://sort" press="onSortPress"/> -->
+    <Button  width="10%" text='Sort Name' icon="sap-icon://alphabetical-order" press="onSortPress"/>
+    </Toolbar>
+    </headerToolbar>
+    <columns>
+    <Column >
+        <Text text= "ProductID">
+    </Text>
+    </Column>
+    <Column >
+        <Text text= "ProductName">
+    </Text>
+    </Column>    
+    <Column >
+        <Text text= "UnitPrice">
+    </Text>
+    </Column>
+    <Column >
+        <Text text= "UnitsInStock">
+    </Text>
+    </Column>
+       </columns>
+    <items>
+    <ColumnListItem >
+     <cells>
+     <Text  text="{productModel>ProductID}"/>
+     <Text  text="{productModel>ProductName}"/>
+     <Text  text="{productModel>UnitPrice}"/>
+     <Text  text="{productModel>UnitsInStock}"/>
+     </cells>
+     
+    </ColumnListItem>
+    </items>
+    
+    </Table>
     </Page>
 </mvc:View>
