@@ -1,7 +1,7 @@
 <mvc:View controllerName="ladera.expandentity.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    <Page id="page" title="Order List">
     <Table items="{/Orders}">
         <columns>
             <Column>
@@ -21,7 +21,7 @@
             </Column>
         </columns>
         <items>
-        <ColumnListItem>
+        <ColumnListItem  type="Navigation" press="onorderListItemPress">
         <cells>
             <Text text="{OrderID}"/>
             <Text text="{CustomerID}"/>
@@ -32,8 +32,8 @@
                         path: 'ShippedDate',
                         type: 'sap.ui.model.type.Date',
                         formatOptions: {
-                        pattern: 'dd-MM-yyyy'
-    } }"/>
+                        pattern: 'dd-MM-yyyy'}
+                        }"/>
         </cells>
         </ColumnListItem>
         </items>              
